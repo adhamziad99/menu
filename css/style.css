@@ -156,9 +156,6 @@ svg {
 {
     width: 80px;
     height: 80px;
-    margin-right: -10px;
-    border: solid 2px var(--color1);
-    border-radius: 50%;
 }
 .conteaner .home .card1 .titel1
 {
@@ -166,7 +163,8 @@ svg {
     font-size: 20px;
     margin-top: 10px;
     padding-bottom: 5px;
-    border-bottom: dotted 2px var(--color1);
+    padding-right: 20px;
+
     color: #8b8b8b;
 }
 .conteaner .home .card1 .titel2
@@ -203,7 +201,7 @@ svg {
     font-size: 18px;
     color: var(--color3);
 }
-.conteaner .last::before {
+/* .conteaner .last::before {
     content: '';
     background-color: var(--color6);
     width: 180px;
@@ -225,4 +223,4 @@ svg {
     border: 4px #222831 solid;
     border-radius: 50%;
     transform: translateX(-50%);
-}
+} */
