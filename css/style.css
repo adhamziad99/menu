@@ -40,8 +40,8 @@ ul
 .conteaner
 {
     width:410px;
-    height:100vh;
-
+    height:auto;
+    background-color: var(--color5);
 }
 .conteaner header
 {
@@ -146,7 +146,7 @@ svg {
     width: 380px;
     height: 80px;
     padding-right: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
     margin-top: 50px;
     margin-bottom: -20px;
     display: flex;
@@ -160,11 +160,11 @@ svg {
 .conteaner .home .card1 .titel1
 {
     width: 285px;
+    height: 35px;
     font-size: 20px;
     margin-top: 10px;
-    padding-bottom: 5px;
-    padding-right: 20px;
-
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.05);
     color: #8b8b8b;
 }
 .conteaner .home .card1 .titel2
@@ -184,30 +184,27 @@ svg {
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 20px;
+    justify-content:space-evenly;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding-top: 30px;
     padding-bottom: 25px;
     box-shadow: var(--box-sh2);
-}
-.last img
-{
-    width: 50px;
-    height: 50px;
 }
 .last h2
 {
     font-size: 18px;
+    padding:5px;
+    border-bottom: solid 1px var(--color3);
     color: var(--color3);
 }
-/* .conteaner .last::before {
+.conteaner .last::before {
     content: '';
     background-color: var(--color6);
     width: 180px;
     height: 2px;
     position: absolute;
-    top: -40px;
+    top: -1px;
     transform: translateX(-50%);
     left: 50%;
 }
@@ -219,8 +216,8 @@ svg {
     background-color: var(--color1);
     position: absolute;
     left: 50%;
-    top: -49px;
+    top: -10px;
     border: 4px #222831 solid;
     border-radius: 50%;
     transform: translateX(-50%);
-} */
+}
