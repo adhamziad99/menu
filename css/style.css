@@ -70,7 +70,7 @@ ul
     position: absolute;
     left: 50%;
     bottom: -29px;
-    border: 4px #222831 solid;
+    border: 4px var(--color5) solid;
     border-radius: 50%;
     transform: translateX(-50%);
 }
@@ -154,24 +154,25 @@ svg {
 }
 .conteaner .home .card1 img
 {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
 }
 .conteaner .home .card1 .titel1
 {
     width: 285px;
-    height: 35px;
+    /* height: 35px; */
     font-size: 20px;
     margin-top: 10px;
     padding:5px;
-    background-color: rgba(0, 0, 0, 0.05);
+    /* background-color: rgba(0, 0, 0, 0.05); */
     color: #8b8b8b;
 }
 .conteaner .home .card1 .titel2
 {
     width: 285px;
     text-align: left;
-    font-size: 18px;
+    font-size: 15px;
     padding: 5px;
     box-shadow: var(--box-sh2);
     letter-spacing: 1.8px;
@@ -187,7 +188,7 @@ svg {
     justify-content:space-evenly;
     margin-top: 60px;
     margin-bottom: 10px;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 25px;
     box-shadow: var(--box-sh2);
 }
@@ -195,7 +196,7 @@ svg {
 {
     font-size: 18px;
     padding:5px;
-    border-bottom: solid 1px var(--color3);
+    /* border-bottom: solid 1px var(--color3); */
     color: var(--color3);
 }
 .conteaner .last::before {
@@ -217,7 +218,7 @@ svg {
     position: absolute;
     left: 50%;
     top: -10px;
-    border: 4px #222831 solid;
+    border: 4px var(--color5) solid;
     border-radius: 50%;
     transform: translateX(-50%);
 }
