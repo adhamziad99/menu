@@ -24,7 +24,7 @@ html
 body 
 {
     font-family: 'Open Sans', sans-serif;
-    background-color: #222831;
+    background-color: var(--color5);
     display: flex;
     justify-content: center;
     background-image: url();
@@ -39,16 +39,17 @@ ul
 }
 .conteaner
 {
-    width:410px;
+    width:400px;
     height:auto;
-    background-color: var(--color5);
 }
 .conteaner header
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 90px;
     position: relative;
-
 }
 .conteaner header::before
 {
@@ -139,14 +140,12 @@ svg {
 {
     width: 100%;
     height: auto;
-
 }
 .conteaner .home .card1
 {
-    width: 380px;
+    width: 100%;
     height: 80px;
     padding-right: 10px;
-    margin-right: 15px;
     margin-top: 50px;
     margin-bottom: -20px;
     display: flex;
@@ -158,24 +157,18 @@ svg {
     height: 90px;
     box-shadow: var(--box-sh);
     border-radius: 50%;
-    margin-right: -5px;
+    margin-left: 10px;
 }
 .conteaner .home .card1 .titel1
 {
     width: 285px;
-    /* height: 35px; */
     font-size: 20px;
     margin-top: 10px;
     padding:5px;
-    /* background-color: rgba(0, 0, 0, 0.05); */
     color: #8b8b8b;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.conteaner .home .card1 .titel1 div
-{
-    margin-top: -30px;
 }
 .conteaner .home .card1 .titel2
 {
@@ -183,7 +176,6 @@ svg {
     text-align: left;
     font-size: 15px;
     padding: 5px;
-    padding-left: 10px;
     box-shadow: var(--box-sh2);
     letter-spacing: 1.8px;
     color: var(--color3);
