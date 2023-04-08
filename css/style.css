@@ -156,7 +156,9 @@ svg {
 {
     width: 90px;
     height: 90px;
+    box-shadow: var(--box-sh);
     border-radius: 50%;
+    margin-right: -5px;
 }
 .conteaner .home .card1 .titel1
 {
@@ -167,6 +169,13 @@ svg {
     padding:5px;
     /* background-color: rgba(0, 0, 0, 0.05); */
     color: #8b8b8b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conteaner .home .card1 .titel1 div
+{
+    margin-top: -30px;
 }
 .conteaner .home .card1 .titel2
 {
@@ -174,6 +183,7 @@ svg {
     text-align: left;
     font-size: 15px;
     padding: 5px;
+    padding-left: 10px;
     box-shadow: var(--box-sh2);
     letter-spacing: 1.8px;
     color: var(--color3);
