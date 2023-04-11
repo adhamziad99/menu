@@ -9,6 +9,10 @@
     --box-sh: 0px 0px 10px -5px #333;
     --box-sh2: 0px 3px 5px -5px rgba(0, 0, 0, 0.5);
 }
+::-webkit-scrollbar
+{
+    display: none;
+}
 *
 {
     -webkit-box-sizing: border-box;
@@ -90,8 +94,8 @@ ul
 
 svg {
     display: block;
-    font: 10.5em 'Montserrat';
-    width: 100%;
+    font: 8.5em 'Montserrat';
+    width: 400px;
     height: 100%;
     margin-top: -20px;
 }
@@ -157,15 +161,16 @@ svg {
     height: 90px;
     box-shadow: var(--box-sh);
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 5px;
+
 }
 .conteaner .home .card1 .titel1
 {
     width: 285px;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 10px;
     padding:5px;
-    color: #8b8b8b;
+    color: var(--color4);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -180,6 +185,208 @@ svg {
     letter-spacing: 1.8px;
     color: var(--color3);
 }
+
+/* ======================================================= */
+.conteaner .list
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+}
+.conteaner .list nav
+{
+    height: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    /* gap: 15px; */
+    overflow: scroll;
+}
+.conteaner .list a
+{
+    width: 110px;
+    height:40px;
+    margin:5px 5px 0 5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    color: var(--color);
+    box-shadow: var(--box-sh);
+    border-left: solid 2px var(--color6);
+    border-right: solid 2px var(--color6);
+}
+
+/* ======================================================= */
+.conteaner .sh
+{
+    width: calc(100% -20px);
+    height: auto;
+    margin: 0 10px;
+}
+.conteaner .sh .card
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    box-shadow: var(--box-sh);
+    margin-top: 30px;
+}
+.conteaner .sh .card .rghit
+{
+    width: calc(100% - 90px);
+    height: 80px;
+    padding: 10px;
+
+}
+.conteaner .sh .card .rghit  .price
+{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.conteaner .sh .card .rghit  .price p
+{
+    color: var(--color3);
+    font-size: 16px;
+    margin: 0 2px;
+    border-bottom: solid 1px var(--color1);
+}
+.conteaner .sh .card .rghit  .price i
+{
+    font-size: 10px;
+    color: var(--color1);
+    padding: 2px;
+    margin-top: -10px;
+}
+.conteaner .sh .card .rghit .name1
+{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color3);
+}
+.conteaner .sh .card .rghit .count
+{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: -10px;
+}
+.conteaner .sh .card .left
+{
+    height: 90px;
+    box-shadow: var(--box-sh);
+    border-radius: 16px;
+}
+.conteaner .sh .card .left img
+{
+    width: 90px;
+    height: 90px;
+    padding: 4px;
+    border-radius: 16px;
+}
+/* ======================================================= */
+.conteaner .d 
+{
+    width: 100%;
+    height: auto;
+    /* margin-top: 10px; */
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 15px;
+    padding: 10px;
+}
+.card3 {
+    width: 115px;
+    height: 150px;
+    position: relative;
+    border-radius: 18px;
+    margin-top: 40px;
+    box-shadow: var(--box-sh);
+    text-align: center;
+}
+
+.card3 img {
+    width: 60px;
+    height: 90px;
+    margin-top: -30px;
+}
+
+.card3 .name {
+    width: 100%;
+    height: 50px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card3 .name h2 {
+    font-size: 20px;
+    color: var(--color3);
+
+}
+
+.card3 .name .price {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.card3 .name .price p {
+    font-size: 19px;
+    color: var(--color3);
+    border-bottom: solid 1px var(--color6);
+}
+
+.card3 .name .price i {
+    font-size: 11px;
+    margin-top: -12px;
+    color: var(--color4);
+    margin-right: 2px;
+    width: 15px;
+    height: 15px;
+    padding: 2px 2.5px;
+    border-radius: 2px;
+    background-color: var(--color6);
+}
+
+.card3 .cont {
+    width: 90px;
+    height: 30px;
+    margin-right: 12.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 50px;
+    background-color: #454545;
+    
+}
+
+.card3 .cont p {
+    font-size: 20px;
+    color: var(--color5);
+    padding: 5px;
+    border-radius: 16px;
+}
+/* ======================================================= */
+
+
 .last
 {
     position: relative;
